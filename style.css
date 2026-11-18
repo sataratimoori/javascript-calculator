@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+.calculator {
+    background-color: #000;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 1px solid #575454;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+#result {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 18px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 20px;
+    background-color: #3A3A3A;
+    color: white;
+    text-align: right;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    font-size: 24px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Numbers */
+.number,
+.decimal,
+.percent {
+    background-color: #08062B;
+    color: white;
+}
+
+/* Clear and Delete */
+.clear,
+.del,
+.sign {
+    background-color: #B7D0D6;
+    color: black;
+    border: none;
+}
+
+/* Operators */
+.operator,
+.equals {
+    background-color: #FFB800;
+    color: white;
+    border: none;
+}
+
+/* Hover */
+button:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+}
+
+/* Click */
+button:active {
+    transform: scale(0.95);
+}
